@@ -15,8 +15,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(LoggerMiddleware);
 
 
-let uri = "mongodb://localhost:27017/laboratoare";
-let options = { useUnifiedTopology: true, useNewUrlParser: true };
+//let uri = "mongodb://localhost:27017/laboratoare";
+const uri = 'mongodb://student:h3T-bYhx-uW8@192.168.37.37:27017/sandbox';
+const options = { useUnifiedTopology: true, useNewUrlParser: true };
 
 // Function to handle the root path
 app.get('/', async function(req, res) {
